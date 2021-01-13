@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body {
+    background-image: url('/images/blueberry-muffins.jpeg');
+    background-size: cover;
+}
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:75vh;
+    font-size: 25px;
+    color: #232d4c;
+}
+.menu {
+    margin-top: 50px;
+    margin-left:25%;
+    margin-right:25%;
+    padding: 25px 25px 0 25px;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    background-color: wheat;
+    border-radius: 15px;
+    color: #232d4c;
+}
+.about {
+    height:60vh;
+    background-color: wheat;
+    margin-top: 50px;
+    margin-left:25%;
+    margin-right:25%;
+    margin-bottom: 50px;
+    padding:25px;
+    border-radius: 15px;
+}
+.top_bar {
+    padding:12.5px;
+    display:flex;
+    justify-content: space-between;
+    background-color: #232d4c;
+    color: wheat;
+    animation-name:'background';
+    animation-duration: 1s;
+}
+#title {
+    margin-left: 25px;
+
+}
+#title:hover {
+    cursor: pointer;
+}
+#nav {
+    padding-left:25px;
+    padding-right:25px;
+    display:flex;
+    width: 320px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    width: 160px;
+    height: 160px;
+    border-radius: 15px;
+}
+
+figure {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: 1px solid #232d4c;
+}
+
+#homeTitle {
+    position: fixed;
+    animation-name:'appear';
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#menuTitle {
+    text-align: center;
+}
+
+.nav_button {
+    cursor: pointer;
+    text-align: center;
+    width:160px;
+}
+
+.nav_button:hover {
+    animation-name: 'grow';
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes background {
+    0% {
+        opacity:0;
+    }
+
+    100% {
+        opacity:1;
+    }
+}
+
+@keyframes appear {
+    0% {
+        bottom:25%;
+        opacity: 0;
+    }
+    100% {
+        bottom: 50%;
+    }
+}
+
+@keyframes grow {
+    100% {
+        font-size:20px;
+    }
+}
